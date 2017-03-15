@@ -1,0 +1,17 @@
+<h1>this is the question with answer page</h1>
+
+<h1>Question with answers</h1>
+ 	<ol>
+		<% Answer.all.each do |a| %>
+
+			<% if a.question_id == @question_id %>
+			
+			<ul>
+				<a href="/questions/<%= @question_id %>/answers/<%= a.id %>">  <%= a.answers %> </a>
+			</ul>
+
+		  	<% end %>
+		<% end %>
+	</ol>
+<h3>#display a list of all 
+#answers for a specific question</h3>

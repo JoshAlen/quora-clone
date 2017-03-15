@@ -1,0 +1,10 @@
+<h1><%= @question.question %></h1>
+
+<form method="post" action="/questions/<%= params[:id] %>">
+	<input type="hidden" name="_method" value="put">
+    <input type=text placeholder="<%= @question.question %>" name="question"><br>
+    <input type=submit value="Submit">
+</form>
+
+<h3>#update a specific question 
+#belonging to a specific user</h3>

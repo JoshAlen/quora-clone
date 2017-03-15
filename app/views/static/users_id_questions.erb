@@ -1,0 +1,17 @@
+<h1>user questions</h1>
+	<ol>
+		<% Question.all.each do |q| %>
+			<% if q.user_id == current_user.id %>
+			<ul>
+				<a href="/users/<%= current_user.id %>/questions/<%= q.id %>">  <%= q.question %> </a>
+			</ul>
+
+			<form method="post" action="/users/<%= current_user.id %>/questions/<%= q.id %>">
+				<input type="hidden" name="_method" value="delete">
+				<input type="submit" value="Delete">
+			</form>
+
+		  	<% end %>
+		<% end %>
+	</ol>
+<h3>#display a list of all #questions for a specific user</h3>

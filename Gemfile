@@ -7,6 +7,11 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
+#byebug
+gem 'byebug'
+
+#bcrypt
+gem 'bcrypt', '~> 3.1.7'
 # Adding thin gem as advised
 gem 'thin'
 

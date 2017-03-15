@@ -1,0 +1,9 @@
+<h1>you hit the users/:user_id/questions/:id</h1>
+
+
+<h2>Your question is:</h2>
+<h3><%= @question.question %></h3>
+<a href="/users/<%= current_user.id %>/questions/<%= params[:id] %>/edit">Edit</a>
+
+<h3>#display a specific question 
+#belonging to a specific user</h3>

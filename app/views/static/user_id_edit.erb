@@ -1,0 +1,14 @@
+<h1>This is the user id edit page</h1>
+
+
+<form method="post" action="/users/<%= current_user.id %>">
+	
+	<input type="hidden" name="_method" value="put">
+
+    <input type=text placeholder="<%= current_user.email %>" name="email"><br>
+   	
+
+    <input type=submit value="Submit">
+</form>
+
+<h3>Note: update a specific user</h3>

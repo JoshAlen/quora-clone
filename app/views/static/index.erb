@@ -1,2 +1,8 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<h2>Login</h2>
+<form method=post action=/signin>
+    <input type=text placeholder="Email" name="user[email]"><br>
+    <input type=password placeholder="Password" name="user[password]"></br>
+    <input type=submit value="Login">
+</form>
+
+<a href="/users/new">Sign up</a>

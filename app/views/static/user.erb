@@ -1,0 +1,13 @@
+<h1>Display a list of all users</h1>
+<ol>
+	<% @users.each do |u| %>
+		
+	 <li><%= u.email %></li>
+
+	 <form method="post" action="/users/<%= u.id %>">
+	 	<input type="hidden" name="_method" value="delete">
+	 	<input type="submit" value="Delete User">
+	 </form>
+		
+	<% end %>
+</ol>
